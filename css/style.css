@@ -338,3 +338,30 @@ margin-bottom:15px;
 .team-card:hover{
 transform:translateY(-10px);
 }
+
+
+// register
+.register-section{
+padding:80px;
+}
+
+.register-form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.register-form input,
+.register-form select{
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.register-form button{
+width:200px;
+align-self:center;
+}
