@@ -365,3 +365,27 @@ font-size:14px;
 width:200px;
 align-self:center;
 }
+
+
+// opportunities
+.opportunity-section{
+padding:80px;
+}
+
+.opportunity-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.opportunity-card{
+background:#f9fafb;
+padding:40px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.opportunity-card:hover{
+transform:translateY(-10px);
+}
