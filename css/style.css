@@ -217,3 +217,175 @@ transition:1s;
 opacity:1;
 transform:translateY(0);
 }
+
+
+// about
+.small-hero{
+height:60vh;
+}
+
+.about-section{
+padding:80px;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about-image img{
+width:100%;
+border-radius:15px;
+}
+
+.mission, .vision{
+padding:80px;
+background:#fff7ed;
+text-align:center;
+}
+
+.mission p, .vision p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+}
+
+
+// gallery
+.gallery-item{
+background:#f9fafb;
+padding:15px;
+border-radius:12px;
+text-align:center;
+transition:0.3s;
+}
+
+.gallery-item img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.gallery-item:hover{
+transform:scale(1.05);
+}
+
+
+// contact
+.contact-info{
+padding:80px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+background:#fff7ed;
+}
+
+.info-card{
+background:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.contact-form-section{
+padding:80px;
+}
+
+.contact-form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+
+.team-section{
+padding:80px;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.team-card{
+background:#f9fafb;
+padding:25px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.team-card img{
+width:100%;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.team-card:hover{
+transform:translateY(-10px);
+}
+
+
+// register
+.register-section{
+padding:80px;
+}
+
+.register-form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.register-form input,
+.register-form select{
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.register-form button{
+width:200px;
+align-self:center;
+}
+
+
+// opportunities
+.opportunity-section{
+padding:80px;
+}
+
+.opportunity-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.opportunity-card{
+background:#f9fafb;
+padding:40px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.opportunity-card:hover{
+transform:translateY(-10px);
+}
