@@ -389,3 +389,59 @@ transition:0.3s;
 .opportunity-card:hover{
 transform:translateY(-10px);
 }
+
+
+// event-details
+.event-overview{
+padding:80px;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:40px;
+}
+
+.event-meta{
+background:#fff7ed;
+padding:30px;
+border-radius:15px;
+display:grid;
+gap:20px;
+}
+
+.event-image{
+padding:0 80px 80px;
+}
+
+.event-image img{
+width:100%;
+border-radius:20px;
+}
+
+.event-about{
+padding:80px;
+max-width:900px;
+margin:auto;
+font-size:18px;
+}
+
+.event-schedule{
+padding:80px;
+background:#f9fafb;
+}
+
+.schedule-list{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.schedule-item{
+background:white;
+padding:20px 30px;
+border-radius:12px;
+display:flex;
+gap:30px;
+align-items:center;
+box-shadow:0 10px 20px rgba(0,0,0,0.05);
+}
