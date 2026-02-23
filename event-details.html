@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel = "icon" type = "image" href = "images/logo.png">
+<link rel="icon" type="image" href="images/logo.png">
 <title>Event Details | Student Spot VIIT</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
-
 </head>
+
 <body>
 
-<!-- ================= HEADER ================= -->
 
 <header class="navbar">
 
@@ -25,9 +24,9 @@
 </div>
 
 <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
+<span></span>
+<span></span>
+<span></span>
 </div>
 
 <nav class="nav-links">
@@ -38,115 +37,95 @@
 <a href="gallery.html">Gallery</a>
 <a href="contact.html">Contact</a>
 <a href="team.html">Team</a>
-<a href = "register.html" class="login-btn mobile-only">Join</a>
+<a href="register.html" class="login-btn mobile-only">Join</a>
 </nav>
 
-<a href = "register.html" class="login-btn desktop-only">Join</a>
+<a href="register.html" class="login-btn desktop-only">Join</a>
 
 </header>
 
-<!-- ================= HERO ================= -->
 
 <section class="hero small-hero">
 
 <div class="hero-content animate">
-<h1>Web Development Bootcamp</h1>
-<p>Learn modern web development from scratch</p>
+<h1 id="eventTitle">Event Title</h1>
+<p id="eventSubtitle">Event Subtitle</p>
 </div>
 
 </section>
 
-<!-- ================= EVENT OVERVIEW ================= -->
 
 <section class="event-overview">
 
 <div class="event-info animate">
 <h2>Event Overview</h2>
-<p>
-This bootcamp is designed for beginners who want to start their journey in web development.
-Participants will learn HTML, CSS, JavaScript and build real projects.
+<p id="eventOverview">
+Event overview goes here.
 </p>
 </div>
 
 <div class="event-meta animate">
+
 <div>
 <h4>Date</h4>
-<p>March 10, 2026</p>
+<p>February 26, 2026</p>
 </div>
+
 <div>
 <h4>Time</h4>
-<p>10:00 AM – 4:00 PM</p>
+<p>10:00 AM – 1:00 PM</p>
 </div>
+
 <div>
 <h4>Venue</h4>
-<p>VIIT Seminar Hall</p>
+<p>Dharithri seminar hall</p>
 </div>
+
 </div>
 
 </section>
 
-<!-- ================= EVENT IMAGE ================= -->
 
 <section class="event-image animate">
-<img src="images/event1.jpg" loading="lazy">
+<img id="eventImage" src="" alt="Event Image">
 </section>
 
-<!-- ================= ABOUT EVENT ================= -->
 
 <section class="event-about">
 
 <h2 class="section-title">About This Event</h2>
 
-<p class="animate">
-This hands-on bootcamp focuses on practical learning.
-By the end of the event, participants will have a strong foundation
-and a project they can showcase.
+<p id="eventAbout" class="animate">
+Event description here.
 </p>
 
 </section>
 
-<!-- ================= EVENT SCHEDULE ================= -->
 
 <section class="event-schedule">
 
 <h2 class="section-title">Schedule</h2>
 
 <div class="schedule-list">
-
-<div class="schedule-item animate">
-<h4>10:00 AM</h4>
-<p>Introduction & Setup</p>
-</div>
-
-<div class="schedule-item animate">
-<h4>11:00 AM</h4>
-<p>HTML & CSS Basics</p>
-</div>
-
-<div class="schedule-item animate">
-<h4>1:00 PM</h4>
-<p>JavaScript Fundamentals</p>
-</div>
-
-<div class="schedule-item animate">
-<h4>3:00 PM</h4>
-<p>Mini Project</p>
-</div>
-
 </div>
 
 </section>
 
-<!-- ================= REGISTRATION CTA ================= -->
 
-<section class="cta">
+<section class="cta" style="padding: 60px 20px;">
 
 <h2>Want to Attend This Event?</h2>
-<a href="register.html" class="btn-primary">Register Now</a>
+
+<a href="https://forms.gle/7DcZ5WnYjQhD59En7" target="_blank" class="btn-primary">Register Now</a>
+
+<div style="margin-top:50px;">
+<p>Scan to Register</p>
+<img src="images/registration-qr.png" width="180">
+</div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+
 <footer class="footer">
     <div class="footer-content">
         <div class="footer-section brand">
@@ -213,7 +192,75 @@ and a project they can showcase.
     </div>
 </footer>
 
+
+
 <script src="js/animate.js"></script>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const event = params.get("event");
+
+const events = {
+
+portfolio:{
+ title:"Building Portfolio",
+ subtitle:"Build a professional portfolio that showcases your skills and projects.",
+ overview:
+ "This workshop is designed for students who want to build a strong online presence and stand out in internships, placements, and freelancing opportunities. Participants will learn how to structure a portfolio, choose the right design, and present their projects in a professional way. By the end of the session, you will have a live portfolio website that represents your skills and personality.",
+ about:
+ "In this hands-on event, you will create your own developer portfolio from scratch using HTML, CSS, and basic JavaScript. You will learn best practices for layout, responsiveness, project sections, contact forms, and deployment. This session focuses on practical learning, real-world examples, and guidance on how to continuously improve your portfolio over time.",
+ image:"images/building_portfolio.png",
+ schedule:[
+   {time:"10:00 AM", activity:"Introduction & Setup"},
+   {time:"10:30 AM", activity:"Portfolio Structure & Design"},
+   {time:"11:30 AM", activity:"Hands-on Development"},
+   {time:"12:30 PM", activity:"Mini Project"},
+   {time:"1:00 PM", activity:"Wrap-up & Q/A"}
+ ]
+},
+
+googleai:{
+ title:"Google AI Studio as Developer",
+ subtitle:"Learn to build AI-powered apps using Google AI Studio.",
+ overview:
+ "This session introduces developers to modern AI tools and workflows for building intelligent applications. You will explore how AI models can be used to solve real-world problems and how developers can integrate them into their projects effectively.",
+ about:
+ "Participants will learn prompt design, model interaction, and how to build simple AI-powered applications using Google AI Studio. The session focuses on practical demos, use cases, and best practices so that you can start experimenting with AI in your own projects.",
+ image:"images/google_ai_studio.png",
+ schedule:[
+   {time:"10:00 AM", activity:"Introduction to AI & Tools"},
+   {time:"10:30 AM", activity:"Google AI Studio Overview"},
+   {time:"11:15 AM", activity:"Prompt Engineering Basics"},
+   {time:"12:00 PM", activity:"Hands-on Demo"},
+   {time:"1:00 PM", activity:"Use Cases & Q/A"}
+ ]
+}
+
+};
+
+if(events[event]){
+ document.getElementById("eventTitle").innerText = events[event].title;
+ document.getElementById("eventSubtitle").innerText = events[event].subtitle;
+ document.getElementById("eventOverview").innerText = events[event].overview;
+ document.getElementById("eventAbout").innerText = events[event].about;
+ document.getElementById("eventImage").src = events[event].image;
+
+ const scheduleBox = document.querySelector(".schedule-list");
+ scheduleBox.innerHTML = "";
+
+ events[event].schedule.forEach(item=>{
+   scheduleBox.innerHTML += `
+     <div class="schedule-item animate">
+        <h4>${item.time}</h4>
+        <p>${item.activity}</p>
+     </div>
+   `;
+ });
+
+}
+
+</script>
 
 </body>
 </html>

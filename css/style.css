@@ -376,9 +376,26 @@ body {
     color: #6b7280;
 }
 
-.event-card .btn-primary {
+.event-card .btn-primary .btn-secondary {
     margin: 0 20px 20px;
     display: inline-block;
+}
+
+.event-actions{
+    display:flex;
+    gap:12px;
+    padding:0 20px 20px;
+}
+
+.event-actions .btn-secondary{
+    border:2px solid #f97316;
+    color:#f97316;
+    background:transparent;
+}
+
+.event-actions .btn-secondary:hover{
+    background:#f97316;
+    color:white;
 }
 
 /* Gallery Section */
