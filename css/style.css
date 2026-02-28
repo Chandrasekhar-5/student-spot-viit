@@ -725,6 +725,7 @@ body {
 /* Small Hero */
 .small-hero {
     min-height: 50vh;
+    margin-bottom: 40px;
 }
 
 /* About Page */
@@ -854,13 +855,15 @@ body {
 
 /* Team Page */
 .team-section {
-    padding: 80px;
+    padding: 80px 60px;
 }
 
 .team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+    margin-bottom: 70px;
 }
 
 .team-card {
@@ -869,6 +872,7 @@ body {
     border-radius: 20px;
     text-align: center;
     transition: all 0.3s ease;
+    width: 320px;
 }
 
 .team-card:hover {
@@ -899,6 +903,35 @@ body {
 .team-card p {
     color: #f97316;
     font-weight: 500;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 50px 0 40px;
+    color: #f97316;
+}
+
+.event-scroll {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}
+
+.event-scroll .team-card {
+    min-width: 230px;
+    flex-shrink: 0;
+}
+
+.event-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.event-scroll::-webkit-scrollbar-thumb {
+    background: #f97316;
+    border-radius: 10px;
 }
 
 /* Register Page */
