@@ -915,6 +915,43 @@ body {
     color: #f97316;
 }
 
+.event-slider {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.event-track {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scrollLeft 40s linear infinite;
+}
+
+.event-track .team-card {
+    min-width: 230px;
+    flex-shrink: 0;
+}
+
+.event-slider:hover .event-track {
+    animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+img {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
 .event-scroll {
     display: flex;
     gap: 25px;
