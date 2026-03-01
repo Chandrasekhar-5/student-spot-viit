@@ -889,7 +889,8 @@ body {
     object-position: center;
     margin-bottom: 20px;
     border: 4px solid #f97316;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    transform-origin: center;
 }
 
 .team-card:hover img {
